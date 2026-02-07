@@ -73,6 +73,17 @@ body {
     transition: opacity 0.25s linear;
 }
 
+.card-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover {
+    color: #f0b400; /* mesmo hover do menu */
+}
+
+
 /* Conteúdo acima do logo */
 .hero-content {
     position: relative;
@@ -103,8 +114,8 @@ body {
 
 .card {
     position: relative;
-    width: 100%;
-    height: 300px;
+    width: 105%;
+    height: 450px;
     /* quadrado ou retângulo */
     overflow: hidden;
     border-radius: 12px;
