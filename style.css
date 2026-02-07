@@ -309,3 +309,102 @@ textarea {
     text-align: center;
     padding: 20px 0;
 }
+
+/* =======================
+   RESPONSIVO - MOBILE
+   ======================= */
+@media (max-width: 768px) {
+
+    /* Header */
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    /* Hero */
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-content {
+        padding: 25px;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    /* Cards serviços */
+    .card {
+        height: 240px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    /* Galeria */
+    .gallery {
+        gap: 20px;
+    }
+
+    .gallery-item {
+        height: 220px;
+    }
+
+    /* Desativa crescimento no mobile */
+    .gallery-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .gallery-item::after {
+        opacity: 1;
+    }
+
+    .gallery-item .title {
+        opacity: 1;
+        transform: translateY(0);
+        font-size: 16px;
+    }
+
+    /* Botão WhatsApp */
+    .btn-whatsapp {
+        width: 100%;
+        max-width: 320px;
+        padding: 18px 20px;
+        font-size: 16px;
+    }
+
+    /* Seções */
+    .section {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-whatsapp {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+    }
+}
+
