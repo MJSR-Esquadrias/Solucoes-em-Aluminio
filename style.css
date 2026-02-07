@@ -398,13 +398,80 @@ textarea {
     }
 }
 
+.contato-box {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contato-info {
+    margin: 30px 0;
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.contato-info strong {
+    color: #00ff9c;
+}
+
+.contato-botoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Botão Google Maps */
+.btn-maps {
+    display: inline-block;
+    padding: 18px 42px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #00b7ff;
+    border: 2px solid #00b7ff;
+    border-radius: 50px;
+    background: transparent;
+    text-decoration: none;
+
+    transition: all 0.4s ease;
+}
+
+.btn-maps:hover {
+    background: #00b7ff;
+    color: #000;
+    box-shadow: 
+        0 0 15px rgba(0,183,255,0.6),
+        0 0 40px rgba(0,183,255,0.4);
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-    .btn-whatsapp {
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 999;
+    .contato-botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-whatsapp,
+    .btn-maps {
+        width: 100%;
+        max-width: 320px;
     }
 }
+
+.email-link {
+    color: #00ff9c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 
